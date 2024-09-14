@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #87CEFA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+.logo img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.logo h2 {
+    font-size: 24px;
+}
+
+.menu {
+    margin-top: 40px;
+}
+
+.menu-item {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.menu-item:hover {
+    background-color: #4682B4;
+    border-radius: 5px;
+}
+
+.main-content {
+    width: 80%;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden; /* Make sure the button fits neatly inside the search bar */
+}
+
+.search-bar input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    flex-grow: 1;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar button img {
+    width: 20px; /* Adjusted the size to fit in the search bar */
+    height: 20px;
+}
+
+.location-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.beach-list {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    gap: 20px;
+}
+
+.beach-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    width: 250px;
+}
+
+.beach-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #87CEFA;
+}
+
+.beach-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.beach-card p {
+    color: grey;
+    font-size: 14px;
+}
